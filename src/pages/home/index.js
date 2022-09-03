@@ -1,5 +1,8 @@
+import "./styles.css";
+
 import Button from "../../components/Button";
-import { useNavigate } from 'react-router-dom';
+import background from "../../assets/background.png";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
     const navigate = useNavigate();
@@ -9,10 +12,19 @@ const Home = () => {
     }
 
     return (
-        <>
-            <Button text={'MetCamp Quiz'} onClick={() => onClickButton('/game')} />
-            <Button text={'Contacto'} onClick={() => onClickButton('/contact')} />
-        </>
+        <section 
+            className="hero is-medium is-fullheight" 
+            style={{
+                backgroundImage: `url(${background})`, 
+                backgroundSize: 'cover',
+            }}
+        >
+            <div className="hero-body">
+                <div className="container has-text-centered">
+                    <Button text={'MetCamp Quiz'} onClick={() => onClickButton('/game')} />
+                </div>
+            </div>
+        </section>
     )
 }
 

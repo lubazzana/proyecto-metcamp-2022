@@ -2,7 +2,9 @@ import './styles.css';
 
 const Button = ({text, onClick}) => {
     return (
-        <button onClick={onClick} className='button'>{text}</button>
+        <button onClick={onClick} className="button is-primary is-medium">
+            { text }
+        </button>
     )
 }
 
