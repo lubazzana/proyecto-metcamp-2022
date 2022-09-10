@@ -1,8 +1,8 @@
 import './styles.css';
 
-const Button = ({text, onClick}) => {
+const Button = ({text, onClick, disabled}) => {
     return (
-        <button onClick={onClick} className="button is-primary is-medium">
+        <button disabled={disabled} onClick={onClick} className="button is-primary">
             { text }
         </button>
     )
