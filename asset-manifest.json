@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/proyecto-metcamp-2022/static/css/main.fb6062bb.css",
+    "main.js": "/proyecto-metcamp-2022/static/js/main.d366dce3.js",
+    "static/js/787.9dc5c8b9.chunk.js": "/proyecto-metcamp-2022/static/js/787.9dc5c8b9.chunk.js",
+    "static/media/background.png": "/proyecto-metcamp-2022/static/media/background.e3e29d8361dd52752faa.png",
+    "static/media/mal.png": "/proyecto-metcamp-2022/static/media/mal.2ecd040144ebca02894f.png",
+    "static/media/bien.png": "/proyecto-metcamp-2022/static/media/bien.73e3c7b895c60d739a7f.png",
+    "index.html": "/proyecto-metcamp-2022/index.html",
+    "main.fb6062bb.css.map": "/proyecto-metcamp-2022/static/css/main.fb6062bb.css.map",
+    "main.d366dce3.js.map": "/proyecto-metcamp-2022/static/js/main.d366dce3.js.map",
+    "787.9dc5c8b9.chunk.js.map": "/proyecto-metcamp-2022/static/js/787.9dc5c8b9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb6062bb.css",
+    "static/js/main.d366dce3.js"
+  ]
+}
