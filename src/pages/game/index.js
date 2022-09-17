@@ -1,15 +1,14 @@
-import { useEffect, useState } from 'react';
-
 import Button from '../../components/Button';
 import { Link } from 'react-router-dom';
 import QuestionCard from '../../components/QuestionCard';
 import Result from '../../components/Result';
+import useFetch from '../../hooks/useFetch';
+import { useState } from 'react';
 
 const API_URL = 'https://62bb6e36573ca8f83298fbef.mockapi.io/metcampweb22/v1/questions/harry-potter';
 
 const Game = () => {
-    const [ loading, setLoading ] = useState(true);
-    const [ questions, setQuestions ] = useState([]);
+    const { loading, data: questions } = useFetch(API_URL);
     const [ selectedAnswers, setSelectedAnswers ] = useState([]);
     const [ result, setResult ] = useState(0);
     const [ mostrarResultado, setMostrarResultado ] = useState(false);
@@ -19,17 +18,6 @@ const Game = () => {
         setResult(respuestasCorrectas.length)
         setMostrarResultado(true)
     }
-
-    useEffect(() => {
-        fetch(API_URL)
-        .then(response => response.json())
-        .then(data => {
-            console.log(data)
-            setQuestions(data)
-        })
-        .catch(error => console.log(error))
-        .finally(() => setLoading(false))
-    }, [])
     
     return (
         <div className="container">
@@ -72,13 +60,6 @@ const Game = () => {
                         {
                             mostrarResultado &&
                             <Result valorResultado={result} />
-                            // <>
-                            //     <p> {result}/{`${questions.length}`}</p>
-                                
-                            //     { result <4 && <img src={mal} alt="mal" /> }
-                            //     { result >= 4 && result <7 && <img src={maso} alt="maso" /> }
-                            //     { result >=7 && <img src={bien} alt="bien" />}
-                            // </>
                         }
 
                     </div>
