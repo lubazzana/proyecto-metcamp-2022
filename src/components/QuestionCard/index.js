@@ -29,7 +29,7 @@ const QuestionCard = ({ currentQuestion, selectedAnswers, setSelectedAnswers, mo
     return(
         <div className="box">
             <div className="question-title">
-                <span className="tag is-rounded is-primary is-light">{currentQuestion.id}</span>
+                <span className="tag is-rounded is-danger is-light">{currentQuestion.id}</span>
                 <span><strong> {currentQuestion.question}</strong></span>
             </div>
             {

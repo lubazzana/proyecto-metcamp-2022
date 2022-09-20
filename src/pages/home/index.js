@@ -1,7 +1,7 @@
 import "./styles.css";
 
 import Button from "../../components/Button";
-import background from "../../assets/background.png";
+import background from "../../assets/new-background.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
         >
             <div className="hero-body">
                 <div className="container has-text-centered">
-                    <Button text={'MetCamp Quiz'} onClick={() => onClickButton('/game')} />
+                    <Button text={'Harry Potter Quiz'} onClick={() => onClickButton('/game')} />
                 </div>
             </div>
         </section>
